@@ -1,0 +1,196 @@
+<!doctype html>
+<!--
+  The hostable copy of ../PRIVACY.md.
+
+  Google Play needs the policy at a public URL, on the store listing and in the
+  Data Safety declaration. This is a single self-contained file with no external
+  requests of any kind — no fonts, no analytics, no CDN — so it can be dropped
+  on GitHub Pages or any static host and will still render identically in five
+  years. That is not a stylistic preference: a privacy policy that phones a
+  third party while it is being read is a bad look and, in some readings, a
+  disclosure of its own.
+
+  Keep in sync with ../PRIVACY.md, including the date at the top.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Roll Ball</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --ink: #1b1f24;
+    --ink-2: #4a5561;
+    --line: #e2e6ea;
+    --accent: #b3341f;
+    --surface: #f6f7f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12161b;
+      --ink: #e8edf3;
+      --ink-2: #a3b0bd;
+      --line: #2a323b;
+      --accent: #ff7a5e;
+      --surface: #1a2027;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto; padding: 2.5rem 1.25rem 5rem; max-width: 46rem;
+    background: var(--bg); color: var(--ink);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.2rem; margin: 2.5rem 0 .6rem; letter-spacing: -.01em; }
+  h3 { font-size: 1rem; margin: 1.75rem 0 .4rem; }
+  p, li { color: var(--ink); }
+  .updated { color: var(--ink-2); margin: 0 0 2rem; font-size: .95rem; }
+  .lede {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: .6rem; padding: 1rem 1.15rem; margin: 0 0 1.5rem;
+  }
+  .lede p:first-child { margin-top: 0; }
+  .lede p:last-child { margin-bottom: 0; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .55rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--ink-2); font-weight: 600; }
+  code {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: .3rem; padding: .05rem .3rem;
+    font: .875em/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  .scroll { overflow-x: auto; }
+  footer { margin-top: 3rem; color: var(--ink-2); font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — Roll Ball</h1>
+<p class="updated">Last updated: 8 August 2026</p>
+
+<div class="lede">
+  <p><strong>Roll Ball does not collect anything about you.</strong> Your progress
+  never leaves your phone. The one exception is advertising: the game shows a
+  small number of ads, and Google's advertising software — not us — collects
+  information in order to choose and measure them.</p>
+  <p>There are no accounts, no sign-in, and no in-app purchases.</p>
+</div>
+
+<h2>What this policy covers</h2>
+<p>The Android application published as <strong>Roll Ball</strong>, package name
+<code>com.bouncehero.game</code>. The package name predates the game's current
+title and is kept because changing it would publish a different app rather than
+an update to this one; it is the same software described here.</p>
+
+<h2>What the game itself stores</h2>
+<p>Everything the game saves is stored <strong>on your device only</strong>.
+There is no account, no server, and no sync. It consists of:</p>
+<ul>
+  <li>which levels you have cleared, your best times, your badges and achievements;</li>
+  <li>your settings (volume, vibration, motion, contrast, colour-vision mode,
+      touch control layout, assist mode);</li>
+  <li>totals: time played, number of deaths, number of level clears.</li>
+</ul>
+<p>None of it is transmitted anywhere. It is held in the app's own private
+storage (WebView local storage, mirrored into Android SharedPreferences so that
+clearing the app's cache does not erase your progress).</p>
+<p><strong>Deleting it:</strong> Settings → Data → Erase removes all of it
+immediately. Uninstalling the app also removes it. There is no copy anywhere
+else, which also means there is nothing to restore it from.</p>
+
+<h2>Advertising</h2>
+<p>The game shows ads through <strong>Google AdMob</strong>. There are two, and
+only two, places they can appear:</p>
+<ul>
+  <li>a full-screen ad after finishing a level, at most once every few levels;</li>
+  <li>an optional video you can choose to watch to skip a level you are stuck on.</li>
+</ul>
+<p>Ads never appear while you are playing a level.</p>
+<p>To select and measure these ads, the Google Mobile Ads SDK collects and
+shares with Google:</p>
+<ul>
+  <li>your device's <strong>advertising ID</strong> (a resettable identifier);</li>
+  <li><strong>device information</strong>: model, operating system version,
+      screen size, language, coarse location derived from your IP address;</li>
+  <li><strong>app activity</strong>: that an ad was requested, shown, or
+      interacted with.</li>
+</ul>
+<p>This is collected by Google's software running inside the app. We do not
+receive it, we cannot see it, and we do not combine it with anything else. What
+we can see is aggregate, anonymous reporting in the AdMob dashboard: how many
+ads were shown and what they earned.</p>
+<p>Google's handling of this data is governed by their own policies:</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+  <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a></li>
+  <li><a href="https://support.google.com/admob/answer/6128543">AdMob &amp; AdSense policies</a></li>
+</ul>
+
+<h3>Your choices about ads</h3>
+<ul>
+  <li><strong>Consent.</strong> If you are in the European Economic Area, the
+      United Kingdom, or a US state with applicable privacy law, the game asks
+      for your choices about ad personalisation the first time it runs, using
+      Google's User Messaging Platform. You can change your answer at any time in
+      <strong>Settings → Data → Ad privacy choices</strong>.</li>
+  <li><strong>Non-personalised by default.</strong> Unless you have specifically
+      consented to personalised ads, the game requests
+      <strong>non-personalised</strong> ads. These still use your device's
+      advertising ID for frequency capping and fraud prevention.</li>
+  <li><strong>Reset or delete your advertising ID.</strong> Android → Settings →
+      Privacy → Ads. You can reset the ID or delete it entirely; deleting it
+      stops apps from receiving one at all.</li>
+  <li><strong>Offline.</strong> The game is fully playable with no network
+      connection. With no connection, no ad is requested and nothing is
+      transmitted.</li>
+</ul>
+
+<h2>Permissions</h2>
+<p>The app asks for four:</p>
+<div class="scroll">
+<table>
+  <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td><code>INTERNET</code></td><td>Requesting ads. The game's own content is inside the app and is never downloaded.</td></tr>
+    <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>The ads SDK checks whether there is a connection before making a request.</td></tr>
+    <tr><td><code>AD_ID</code></td><td>Reading the advertising ID, for ads.</td></tr>
+    <tr><td><code>VIBRATE</code></td><td>Haptic feedback. Can be turned off in Settings → Play → Vibration.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Google's advertising library adds a few more of its own, all of them
+"normal" permissions that Android grants without asking you and that give no
+access to anything personal: <code>ACCESS_ADSERVICES_AD_ID</code>,
+<code>ACCESS_ADSERVICES_ATTRIBUTION</code> and
+<code>ACCESS_ADSERVICES_TOPICS</code> (Android's Privacy Sandbox advertising
+APIs), and <code>FOREGROUND_SERVICE</code> and <code>WAKE_LOCK</code> (used by
+Google Play services). They are listed here for completeness rather than because
+they do anything you would notice.</p>
+<p>There is no access to your location, camera, microphone, contacts, files,
+photos, or any other app.</p>
+
+<h2>Children</h2>
+<p>Roll Ball is not directed at children under 13, and we do not knowingly
+collect personal information from children. If you believe a child has provided
+information through this app, contact us at the address below and we will act on
+it.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes in a way that affects what is collected, the updated
+version will be posted at this URL with a new date at the top, and — where the
+change is material — the app will ask again through the consent flow.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:manushanth20@gmail.com">manushanth20@gmail.com</a></p>
+
+<hr>
+<footer>Roll Ball — <code>com.bouncehero.game</code></footer>
+
+</body>
+</html>
